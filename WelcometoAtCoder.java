@@ -11,8 +11,8 @@ public class WelcometoAtCoder {
 		int iSuji3 = sc.nextInt();
 
 		//文字列の入力
-		String strMoji = sc.next();
+		String strMoji1 = sc.next();
 		//出力
-		System.out.println((iSuji1+iSuji2+iSuji3) + " " + strMoji);
+		System.out.println((iSuji1+iSuji2+iSuji3) + " " + strMoji1);
 	}
 }
