@@ -6,12 +6,10 @@ public class ABC081 {
 
 		Scanner sc = new Scanner(System.in);
 
-		String strSuji = sc.next();
+		String strInput = sc.next();
 
-		int iSuji1 = Character.getNumericValue(strSuji.charAt(0));
-		int iSuji2 = Character.getNumericValue(strSuji.charAt(1));
-		int iSuji3 = Character.getNumericValue(strSuji.charAt(2));
+		strInput = strInput.replaceAll("0", "");
 
-		System.out.println(iSuji1+iSuji2+iSuji3);
+		System.out.println(strInput.length());
 	}
 }
