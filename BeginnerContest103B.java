@@ -11,26 +11,16 @@ public class BeginnerContest103B {
 
 		boolean flg = false;
 
-		String[] str = a.split("");
+		for (int i = 0; i < a.length(); i++) {
 
-		for (int i = 0; i < str.length; i++) {
-
-			StringBuffer sb = new StringBuffer();
-
-			sb.append(str[str.length-1]);
-
-			for(int j = 0; j < str.length-1; j++ ) {
-
-				sb.append(str[j]);
-			}
-
-			if (sb.toString().equals(b)) {
+			if (a.equals(b)) {
 				flg = true;
 				break;
+
+			} else {
+
+				a = a.substring(1) + a.charAt(0);
 			}
-
-			str = sb.toString().split("");
-
 		}
 
 		if (flg) {
