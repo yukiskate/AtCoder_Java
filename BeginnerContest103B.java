@@ -24,12 +24,12 @@ public class BeginnerContest103B {
 				sb.append(str[j]);
 			}
 
-			if (String.valueOf(sb).equals(b)) {
+			if (sb.toString().equals(b)) {
 				flg = true;
 				break;
 			}
 
-			str = String.valueOf(sb).split("");
+			str = sb.toString().split("");
 
 		}
 
